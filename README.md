@@ -41,8 +41,8 @@ Currently,
 ## Installation
 - clone repo
 - npm install
-- npm run build
-- run npm run start then navigate to localhost:3000 on browser
+- npm run dev or
+- npm run start then navigate to localhost:3000 on browser
 
 # Screenshots
 
