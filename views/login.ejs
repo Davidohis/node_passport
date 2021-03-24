@@ -1,38 +1,60 @@
 <% include ./partials/css %>
 
-<div class="container">
-<div class="row mt-5">
-  <div class="col-md-6 m-auto">
-    <div class="card card-body">
-      <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>Login</h1>
-      <% include ./partials/messages %>
-      <form action="/users/login" method="POST">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-control"
-            placeholder="Enter Email"
-          />
+<div class="container px-4 py-5 mx-auto">
+  <div class="card card0">
+    <div class="d-flex flex-lg-row flex-column-reverse">
+      <div class="card card1">
+        <% include ./partials/messages %>
+        <div class="row justify-content-center my-auto">
+          <div class="col-md-8 col-10 my-2">
+            <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>Login</h1>
+            <h6 class="msg-info text-center">Please login to your account</h6>
+            <form action="/users/login" method="POST">
+              <div class="form-group">
+                <label class="form-control-label text-muted">Username</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter Email"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-control-label text-muted">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Enter Password"
+                />
+              </div>
+              <div class="row justify-content-center my-3 px-3">
+                <button type="submit" class="btn-block btn-color">Login</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            class="form-control"
-            placeholder="Enter Password"
-          />
+        <div class="bottom text-center mb-5">
+          <p class="sm-text mx-auto mb-3">
+            Don't have an account?<button class="btn btn-white ml-2">
+             <a  href="/users/register"> Register </a> 
+            </button>
+          </p>
         </div>
-        <button type="submit" class="btn btn-secondary btn-block">Login</button>
-      </form>
-      <p class="lead mt-4">
-        No Account? <a href="/users/register" style="color: rgb(43, 197, 43);">Register</a>
-      </p>
+      </div>
+      <div class="card card2">
+        <div class="my-auto mx-md-5 px-md-5 right">
+          <h3 class="text-white">We are more than just a company</h3>
+          <small class="text-white"
+            >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.</small
+          >
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
