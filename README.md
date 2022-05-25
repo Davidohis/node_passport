@@ -46,10 +46,6 @@ Currently,
 
 # Screenshots
 
-![project image](1.png)
-
-![project image](2.png)
-
 # Author 
 David Igheose 
 
